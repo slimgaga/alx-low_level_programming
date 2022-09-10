@@ -1,11 +1,7 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: print all possible different
- *
- * combinations of two digits.
+ * main - Prints numbers between 00 to 89.
  *
  * Return: Always 0 (Success)
  *
@@ -13,29 +9,31 @@
 
 int main(void)
 {
-	int digit1 = 0, digit2;
+	int i, e;
 
-	while (digit1 <= 9)
+	i = 48;
+	e = 48;
+
+	while (e < 58)
 	{
-		digit2 = 0;
-		while (digit2 <= 9)
+		i = 48;
+		while (i < 58)
 		{
-			if (digit1 != digit2 && digit1 < digit2)
+			if (e != i && e < i)
 			{
-				putchar(digit1 + 48);
-				putchar(digit2 + 48);
-			
-				if (digit1 + digit2 != 17)
+				putchar(e);
+				putchar(i);
+				if (i == 57 && e == 56)
 				{
-					putchar(',');
-					putchar(' ');
+					break;
 				}
+				putchar(',');
+				putchar(' ');
 			}
-			++digit2
+			i++;
 		}
-		++digit1;
+		e++;
 	}
 	putchar('\n');
-
 	return (0);
 }
