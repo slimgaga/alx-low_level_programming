@@ -3,7 +3,7 @@
 /**
  * _strcat - function that concatenates
  *
- * 	two strings.
+ * 		 two strings.
  *
  * @dest: pointer to destnation input
  *
