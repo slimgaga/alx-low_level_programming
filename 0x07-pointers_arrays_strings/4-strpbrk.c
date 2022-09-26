@@ -4,7 +4,8 @@
  * _strpbrk - a function that searches a
  *
  *		string for any of a set of bytes.
- * @s: pointer to input string
+ *
+ *@s: pointer to input string
  *
  * @accept: pointer to string we
  *
